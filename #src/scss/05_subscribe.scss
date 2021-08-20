@@ -1,0 +1,92 @@
+.subscribe {
+    padding: 140px 0px;
+    background-color: #f6f2f2;
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+    &__body {
+        display: grid;
+        grid-template: auto auto / 1fr 15px minmax(auto, 1250px) 15px 1fr;
+    }
+
+    &__text {
+        grid-column: 3;
+        grid-row: 1;
+        margin-bottom: 62px;
+    }
+
+    &__title {
+        .title__text {
+            text-align: center;
+            text-transform: none;
+            letter-spacing: 0.025em;
+            opacity: 1;
+        }
+        margin-bottom: 31px;
+    }
+
+    &__subtitle {
+        .subtitle__text {
+            text-align: center;
+            opacity: 1;
+        }
+    }
+
+    &__form {
+        grid-column: 3;
+        grid-row: 2;
+        .form__item {
+            // display: grid;
+            // grid-template-columns: 1fr minmax(auto, 760px) 1fr;
+        }
+
+        .form__body {
+            grid-column: 2;
+            // display: grid;
+            // grid-auto-flow: column;
+            // grid-template-columns: 1fr auto;
+            display: flex;
+        }
+
+        .form__input {
+            flex: 1 1 auto;
+            input {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                grid-column: 2;
+                opacity: 0.7;
+                font-family: "Open Sans";
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #2c2c2c;
+                padding-left: 33px;
+            }
+            margin-right: 22px;
+        }
+        .form__button {
+            .button__item {
+                height: 100%;
+                width: 100%;
+                padding: 33px 58px;
+                text-transform: uppercase;
+            }
+        }
+        @media (max-width: 767px) {
+            .form__body {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 20px;
+            }
+            .form__input {
+                grid-row: 1;
+                margin-right: 0;
+            }
+            .form__button {
+                grid-row: 2;
+            }
+        }
+    }
+}

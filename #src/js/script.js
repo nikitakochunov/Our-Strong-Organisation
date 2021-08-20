@@ -1,0 +1,5 @@
+@@include('header.js')
+@@include('burger.js')
+@@include('products__list.js')
+@@include('products__categories.js')
+@@include('team.js')

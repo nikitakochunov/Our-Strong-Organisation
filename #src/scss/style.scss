@@ -1,0 +1,124 @@
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+input:focus,
+textarea {
+    border: none;
+    outline: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+.title__text {
+    opacity: 0.8;
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #000000;
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}
+
+.subtitle__text {
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    /* Медиа-запросы для отступов от заголовков секций, от блоков с текстом и от линиий
+    Также размер шрифта для заголовков*/
+    .title {
+        margin-bottom: 15px;
+    }
+    .title__text {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .text {
+        margin-bottom: 20px;
+    }
+
+    .line {
+        margin-bottom: 39px;
+    }
+}
+
+.button__item {
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    font-size: 18.2px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Open Sans";
+    &:hover {
+        background-color: lighten(#ff2d2d, 10);
+    }
+}
+
+.line {
+    width: 132px;
+    height: 3px;
+    background-color: #ff2d2d;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+@import "01_hero";
+@import "02_provide";
+@import "03_products";
+@import "04_team";
+@import "05_subscribe";
+@import "06_getintouch";
+@import "07__footer";
